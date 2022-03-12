@@ -2,7 +2,7 @@
 name = "m365"
 version = "0.1.1"
 edition = "2021"
-license-key = "LICENSE.md"
+license-file = "LICENSE.md"
 description = "A lightweight rust library to receive BLE Xiaomi M365 scooter messages"
 keywords = ["m365", "xiaomi", "electric-scooter", "bluetooth", "ble"]
 repository = "https://github.com/macbury/m365"
