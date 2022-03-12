@@ -1,5 +1,9 @@
 ![Scooter](./doc/logo.jpeg)
 # About
+
+![MIT license](https://img.shields.io/github/license/macbury/m365)
+![Crates.io version](https://img.shields.io/crates/v/m365)
+
 Get info about your Xiaomi Mijia 365 Scooter via BLE (Bluetooth Low Energy). This is using [btleplug](https://crates.io/crates/btleplug) which is an async Rust BLE library, supporting Windows 10, macOS, Linux, and iOS. I did test this only on my linux laptop and It should in theory work with other systems.
 
 # How to use

@@ -1,6 +1,6 @@
 [package]
 name = "m365"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "AGPL-3.0 License"
 description = "A lightweight rust library to receive BLE Xiaomi M365 scooter messages"
