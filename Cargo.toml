@@ -1,0 +1,47 @@
+[package]
+name = "m365"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+btleplug = { version = "0.9.1", features = ["serde"] }
+serde = { version = "1.0.136", features = ["derive"] }
+p256 = { version = "0.10.1", features = ["ecdsa", "ecdh"] }
+rand_core = "0.6.3"
+elliptic-curve = "0.11.9"
+ccm = "0.4.4"
+aes = { version = "0.7", features = ["force-soft"] }
+hkdf = "0.12.0"
+sha2 = "0.10.1"
+hex-literal = "0.3.4"
+hmac = "0.12.1"
+
+pretty-hex = "0.2.1"
+tokio = { version = "1.15.0", features = ["full"] }
+futures-util = "0.3.19"
+futures = "0.3.19"
+tokio-stream = "0.1.8"
+uuid = { version = "0.8.2", features = ["v4"] }
+anyhow = "1.0.53"
+thiserror = "1.0.30"
+tracing = "0.1"
+
+[dev-dependencies]
+tracing-subscriber = { version = "0.3.7", features = ["tracing-log"] }
+
+[[example]]
+name = "register"
+
+[[example]]
+name = "login"
+
+[[example]]
+name = "scanner"
+
+[[example]]
+name = "about"
+
+[[example]]
+name = "settings"
