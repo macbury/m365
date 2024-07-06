@@ -37,7 +37,7 @@ impl TryFrom<Payload> for BatteryInfo {
       BatteryInfo {
         capacity: payload.pop_u16()?,
         percent: payload.pop_u16()?,
-        current: payload.pop_i16()? as f32 / 10.0,
+        current: payload.pop_i16()? as f32 / 100.0,
         voltage: payload.pop_u16()? as f32 / 100.0,
         temperature_1: payload.pad_byte()?,
         temperature_2: payload.pad_byte()?,
@@ -84,7 +84,7 @@ impl MiSession {
     let mut payload = self.read(2).await?;
     payload.pop_head()?;
 
-    let amperage = payload.pop_i16()? as f32 / 10.0;
+    let amperage = payload.pop_i16()? as f32 / 100.0;
 
     Ok(amperage)
   }
